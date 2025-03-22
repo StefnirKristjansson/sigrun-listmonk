@@ -19,8 +19,5 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 # Expose the application port
 EXPOSE 8080
 
-# Set the entrypoint
-ENTRYPOINT ["docker-entrypoint.sh"]
-
 # Define the command to run the application
 CMD ["./listmonk"]
