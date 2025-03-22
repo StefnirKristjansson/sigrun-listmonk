@@ -8,7 +8,7 @@ WORKDIR /listmonk
 
 # Copy only the necessary files
 COPY listmonk .
-COPY config.toml .
+#COPY config.toml .
 # Copy the entrypoint script
 COPY docker-entrypoint.sh /usr/local/bin/
 
