@@ -17,7 +17,7 @@ COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Expose the application port
-EXPOSE 9000
+EXPOSE 8080
 
 # Set the entrypoint
 ENTRYPOINT ["docker-entrypoint.sh"]
