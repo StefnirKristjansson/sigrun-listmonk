@@ -17,6 +17,9 @@ COPY docker-entrypoint.sh /usr/local/bin/
 # Make the entrypoint script executable
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
+# Create uploads directory (needed at runtime)
+RUN mkdir -p /listmonk/uploads
+
 # Expose the application port
 EXPOSE 8080
 
