@@ -8,7 +8,8 @@ WORKDIR /listmonk
 
 # Copy only the necessary files
 COPY listmonk .
-#COPY config.toml .
+COPY config.toml.sample config.toml
+
 # Copy the entrypoint script
 COPY docker-entrypoint.sh /usr/local/bin/
 
@@ -16,7 +17,7 @@ COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Expose the application port
-EXPOSE 8080
+EXPOSE 9000
 
 # Set the entrypoint
 ENTRYPOINT ["docker-entrypoint.sh"]
