@@ -8,6 +8,7 @@ WORKDIR /listmonk
 
 # Copy only the necessary files
 COPY listmonk .
+RUN chmod +x listmonk
 COPY config.toml.sample config.toml
 
 # Copy the entrypoint script
