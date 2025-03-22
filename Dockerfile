@@ -20,4 +20,5 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 EXPOSE 8080
 
 # Define the command to run the application
-CMD ["./listmonk"]
+CMD ["sh", "-c", "echo ==== ENVIRONMENT ==== && env && echo ==== STARTING ==== && ./listmonk"]
+
